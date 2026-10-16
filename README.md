@@ -2,6 +2,8 @@
 
 MERN MVP for pet medical records across shared **Families**, with passwordless OTP login scoped to a **Human**. Families are created when you add your first pet (or join via invite) — never empty households on signup.
 
+Built with [Cursor](https://cursor.com).
+
 ## Stack
 
 - **MongoDB** (Docker)

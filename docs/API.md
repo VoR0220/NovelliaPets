@@ -2,13 +2,9 @@
 
 Base URL (local): `http://localhost:4000`
 
-All JSON endpoints use `Content-Type: application/json` unless noted. Errors typically look like:
+All JSON endpoints use `Content-Type: application/json` unless noted.
 
-```json
-{ "error": "Human-readable message" }
-```
-
-Validation failures may also surface Zod error details depending on the error middleware.
+**Errors:** status codes, response shape, and every application message → **[ERRORS.md](./ERRORS.md)**
 
 ---
 

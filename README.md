@@ -167,7 +167,7 @@ API tests use an in-memory MongoDB and exercise the same seed scenarios (care du
 
 Full request/response reference (bodies, query params, auth, roles):
 
-→ **[docs/API.md](docs/API.md)**
+→ **[docs/API.md](docs/API.md)** · **[docs/ERRORS.md](docs/ERRORS.md)**
 
 Quick map:
 

@@ -163,10 +163,19 @@ API tests use an in-memory MongoDB and exercise the same seed scenarios (care du
 | `npm run dev:server` | API on `:4000` |
 | `npm run dev:client` | Vite on `:5173` |
 
-## API overview
+## API
 
-- `POST /api/auth/request-otp` · `verify-otp` · `GET /api/auth/me`
-- `GET /api/dashboard`
-- `CRUD /api/pets` (+ `/records`)
-- `GET/PATCH /api/families/:id` · invites · transfers · merges
-- `GET /api/notifications` + `GET /api/notifications/stream` (SSE, `?token=`)
+Full request/response reference (bodies, query params, auth, roles):
+
+→ **[docs/API.md](docs/API.md)**
+
+Quick map:
+
+| Area | Endpoints |
+|------|-----------|
+| Auth | `POST /api/auth/request-otp`, `verify-otp`, `GET /me`, `POST /logout` |
+| Care | `GET /api/dashboard` |
+| Pets | `CRUD /api/pets`, `CRUD /api/pets/:id/records` |
+| Families | `GET/PATCH /api/families/:id`, invites, transfers, merges |
+| Realtime | `GET /api/notifications`, `GET /api/notifications/stream` (SSE) |
+| Files | `POST /api/uploads` (`multipart` field `file`) |
